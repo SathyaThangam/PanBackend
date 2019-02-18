@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
-    name: 'Pancardnodejs',
-    script: 'app.js',
+    name: 'NodePancard',
+    script: 'npm',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     args: 'one two',
@@ -19,12 +19,13 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'node',
+      user : 'root',
       host : '159.89.165.174',
       ref  : 'origin/master', 
-      repo : 'https://github.com/SathyaThangam/NodePancard',
-      path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      repo : 'https://github.com/SathyaThangam/NodePancard.git',
+      path : '/var/www/NodePancard',
+      // 'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install --production &&  node index.js'
     }
   }
 };
