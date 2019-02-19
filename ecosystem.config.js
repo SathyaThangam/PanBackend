@@ -25,7 +25,7 @@ module.exports = {
       repo : 'https://github.com/SathyaThangam/PancardFormNode.git',
       path : '/var/www/PancardFormNode',
       // 'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
-      'post-deploy' : 'npm install --production && pm2 del NodePancard || pm2 start index.js --name "NodePancard"'
+      'post-deploy' : 'npm install --production && pm2 del PancardFormNode || pm2 start index.js --name "PancardFormNode"'
       
     }
   }
