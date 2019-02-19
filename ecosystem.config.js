@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: 'PancardFormNode',
+    name: 'PancardBackend',
     script: 'npm',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
@@ -22,10 +22,10 @@ module.exports = {
       user : 'root',
       host : '159.89.165.174',
       ref  : 'origin/master', 
-      repo : 'https://github.com/SathyaThangam/PancardFormNode.git',
-      path : '/var/www/PancardFormNode',
+      repo : 'https://github.com/SathyaThangam/PancardBackend.git',
+      path : '/var/www/PancardBackend',
       // 'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
-      'post-deploy' : 'npm install --production && pm2 del PancardFormNode || npm run production'
+      'post-deploy' : 'npm install --production && pm2 del PancardBackend || npm run production'
       
     }
   }
