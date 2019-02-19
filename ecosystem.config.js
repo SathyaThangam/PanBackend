@@ -25,7 +25,8 @@ module.exports = {
       repo : 'https://github.com/SathyaThangam/NodePancard.git',
       path : '/var/www/NodePancard',
       // 'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
-      'post-deploy' : 'npm install --production &&  node index.js'
+      'post-deploy' : 'npm install --production && pm2 del NodePancard || pm2 start index.js --name "NodePancard"'
+      
     }
   }
 };

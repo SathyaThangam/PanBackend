@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 var cors = require('cors');
+const Nexmo = require('nexmo');
 
 // app.get('/', function (req, res) {
 //   res.send('Hello World')
 // })
- 
 // app.listen(5000)
 
 var MongoClient = require('mongodb').MongoClient;
@@ -104,6 +104,15 @@ var count = 0;
       })
       .then(message => console.log(message.sid))
     .done();
+
+    // const nexmo = new Nexmo({
+    //   apiKey: 'baffada5',
+    //   apiSecret: 'EHohk1kAn7RdMfeR'
+    // })
+    // const from = 'Nexmo'
+    // const to = '918778412352' 
+    // const text = 'Hello from Nexmo'
+    // nexmo.message.sendSms(from, to, text)
 
     alldata.phonenumber = "";
 
