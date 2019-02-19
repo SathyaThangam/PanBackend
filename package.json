@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SathyaThangam/NodePancard.git"
+    "url": "git+https://github.com/SathyaThangam/PancardFormNode.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SathyaThangam/NodePancard/issues"
+    "url": "https://github.com/SathyaThangam/PancardFormNode/issues"
   },
-  "homepage": "https://github.com/SathyaThangam/NodePancard#readme"
+  "homepage": "https://github.com/SathyaThangam/PancardFormNode#readme"
 }
