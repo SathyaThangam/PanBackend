@@ -3,9 +3,9 @@ const app = express();
 var cors = require('cors');
 const Nexmo = require('nexmo');
 
-// app.get('/', function (req, res) {
-//   res.send('Hello World')
-// })
+app.get('/', function (req, res) {
+  res.send('welcome to pan card backend')
+})
 // app.listen(5000)
 
 var MongoClient = require('mongodb').MongoClient;
