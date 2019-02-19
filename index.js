@@ -19,13 +19,6 @@ app.use(cors())
 var url = "mongodb://localhost:27017/";
 
 
-// app.get('/api', (req, res) => {
-//   let all="afdsasfd";
-// res.json(
-//   all
-// )
-// })
-
 global.myotp = "" ;
 global.phno = "";
 app.post('/saveData', (req, res) => {
@@ -104,15 +97,6 @@ var count = 0;
       })
       .then(message => console.log(message.sid))
     .done();
-
-    // const nexmo = new Nexmo({
-    //   apiKey: 'baffada5',
-    //   apiSecret: 'EHohk1kAn7RdMfeR'
-    // })
-    // const from = 'Nexmo'
-    // const to = '918778412352' 
-    // const text = 'Hello from Nexmo'
-    // nexmo.message.sendSms(from, to, text)
 
     alldata.phonenumber = "";
 
